@@ -4,7 +4,7 @@ import numpy as np
 from collections import defaultdict
 from pathlib import Path
 
-from ultralytics import YOLO
+from ultralytics import 
 from ultralytics.utils.plotting import colors
 
 
@@ -12,11 +12,11 @@ class ObjectTracking:
 
     def __init__(
         self,
-        model="yolo26n.pt",
+        model="mpt26n.pt",
         source="videos/xyz.mp4"
     ):
-        # Load YOLO model
-        self.model = YOLO(model)
+        # Load  model
+        self.model = (model)
         self.names = self.model.names
 
         # Check video file
@@ -220,7 +220,7 @@ class ObjectTracking:
 
 if __name__ == "__main__":
     tracker = ObjectTracking(
-        model="yolo26n.pt",
+        model="mpt26n.pt",
         source="videos/xyz.mp4"
     )
     tracker.run()
